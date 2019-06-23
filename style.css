@@ -5,6 +5,7 @@ body {
 
 nav {
     background-color: #50B7B4;
+    font-family: 'Abel', sans-serif;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -14,6 +15,20 @@ nav {
 .navbar-dark .navbar-nav .nav-link:hover {
     color: rgba(255, 255, 255, 0.75)!important;
 }
+
+.sticky-top.scrolled {
+    background-color: rgba(80, 183, 180, 0.6) !important;
+    transition: background-color 200ms linear;
+}
+  
+.sticky-top.scrolled .nav-link {
+    color:#555;
+}
+
+/* .navbar-inner {
+    background: rgba(80, 183, 180, 1);
+} */
+
 .row-1 {
     position: relative;
     background-image: url('./utilities/fundo-esatt.png');
@@ -52,7 +67,10 @@ nav {
     position: relative;
     background-color: #F5FFFF;
     height: 25%;
-    width: 100%;  
+    width: 100%; 
+    font-family: 'Abel', sans-serif;
+    padding-top: 50px;
+    padding-bottom: 50px; 
 }
 
 .row-3 {
@@ -60,6 +78,44 @@ nav {
     background-color: #74BEBD;
     height: 25%;
     width: 100%;  
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.title {
+    color: white; 
+    font-family: 'Abel', sans-serif; 
+    text-align: center;
+}
+
+.feature1 {
+    flex-direction: column;
+    margin: 20px 30%;
+    border-radius: 50%;
+    width: 155px;
+    height: 150px;
+}
+
+.p1 {
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.feature2 {
+    flex-direction: column;
+    margin: 20px 30%;
+    border-radius: 50%;
+    width: 155px;
+    height: 150px;
+}
+
+.p2 {
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .row-4 {
@@ -67,7 +123,96 @@ nav {
     background-color: #F5FFFF;
     height: 25%;
     width: 100%;  
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+.row-4 > * {
+    font-family: 'Abel', sans-serif;
+}
+
+.row-5 {
+    position: relative;
+    background-color: #74BEBD;
+    height: 25%;
+    width: 100%;padding-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+}
+
+/* Three columns side by side */
+.column {
+    width: 25%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+  
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 768px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    font-family: 'Abel', sans-serif;
+
+}
+
+.title-team {
+    color: grey;
+}
+
+.row-6 {
+    position: relative;
+    background-color: #F5FFFF;
+    height: 25%;
+    width: 100%;padding-top: 50px;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;  
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 55px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    color: white;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #50B7B4;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-instagram {
+    background: #50B7B4;
+    color: white;
+    border-radius: 50%;
+}
+
+.fa-linkedin {
+    background: #50B7B4;
+    color: white;
+    border-radius: 50%;
+}
+  
 
 .footer {
     position: relative;
@@ -87,6 +232,22 @@ p > a:active {
 
 /* sm */
 @media only screen and (min-width: 480px) {
+    .feature1 {
+        margin: 20px 33%;
+    }
+    
+    .p1 {
+        text-align: center;
+    }
+    
+    .feature2 {
+        margin: 20px 33%;
+    }
+    
+    .p2 {
+        text-align: center;
+    }
+    
     .logo_row {
         top: 26%;
         left: 34%;
@@ -97,6 +258,22 @@ p > a:active {
 
 /* md */
 @media only screen and (min-width: 576px) {
+    .feature1 {
+        margin: 20px 35%;
+    }
+    
+    .p1 {
+        text-align: center;
+    }
+    
+    .feature2 {
+        margin: 20px 35%;
+    }
+    
+    .p2 {
+        text-align: center;
+    }
+
     .logo_row {
         top: 23%;
         left: 30%;
@@ -117,6 +294,36 @@ p > a:active {
 
 /* lg */
 @media only screen and (min-width: 768px) {
+    .c1 {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .c2 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row-reverse;
+    }
+
+    .feature1 {
+        margin: 20px 20px;
+    }
+    
+    .p1 {
+        text-align: center;
+    }
+    
+    .feature2 {
+        margin: 20px 20px;
+    }
+    
+    .p2 {
+        text-align: center;
+    }
+    .card {
+        font-size: 0.7em;
+    }
+
     .logo_row {
         top: 20%;
         left: 32%;
@@ -132,5 +339,9 @@ p > a:active {
         left: 35%;
         width: 350px;
         height: 175px;
+    }
+
+    .card {
+        font-size: 1em;
     }
 }
