@@ -140,7 +140,6 @@ nav {
     padding-top: 50px;
     padding-bottom: 50px;  
 }
-
 /* Three columns side by side */
 .column {
     width: 25%;
@@ -175,6 +174,19 @@ nav {
     padding-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 50px;  
+}
+
+.btn {
+    background-color: #50B7B4!important;
+    color: white!important;
+    margin-bottom: 50px;
+    margin-left: 35%;  
+    width: 30%;
+}
+
+.btn:hover {
+    background-color: #9AD0D0!important;
+    color: white!important;
 }
 
 /* Style all font awesome icons */
@@ -215,6 +227,7 @@ nav {
   
 
 .footer {
+    margin-top: 50px;
     position: relative;
     background-color: #50B7B4;
 }
