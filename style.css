@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #50B7B4;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white!important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.75)!important;
+}
+.row-1 {
+    position: relative;
+    background-image: url('./utilities/fundo-esatt.png');
+    background-repeat: no-repeat;
+    background-position: absolute;
+    background-size: cover;
+    top: 0%;
+    left: 0;
+    height: 300px;
+    width: 100%;  
+    transition: 2%;
+}
+
+.logo_row {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    width: 200px;
+    height: 100px;
+    transition: 2%;
+    background-image: url('./utilities/logo.jpeg');
+    background-position: center;
+    background-size: contain;
+    z-index: 1;
+}
+
+.logo_row:hover ~ .row-1 {
+    filter: blur(3px);
+}
+
+.logo_row:hover {
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+}
+
+.row-2 {
+    position: relative;
+    background-color: #F5FFFF;
+    height: 25%;
+    width: 100%;  
+}
+
+.row-3 {
+    position: relative;
+    background-color: #74BEBD;
+    height: 25%;
+    width: 100%;  
+}
+
+.row-4 {
+    position: relative;
+    background-color: #F5FFFF;
+    height: 25%;
+    width: 100%;  
+}
+
+.footer {
+    position: relative;
+    background-color: #50B7B4;
+}
+
+p > a {
+    color: #9AD0D0;
+}
+
+p > a:hover,
+p > a:active {
+    color: #F5FFFF;
+}
+
+/* Media Queries */
+
+/* sm */
+@media only screen and (min-width: 480px) {
+    .logo_row {
+        top: 26%;
+        left: 34%;
+        width: 200px;
+        height: 100px;
+    }
+}
+
+/* md */
+@media only screen and (min-width: 576px) {
+    .logo_row {
+        top: 23%;
+        left: 30%;
+        width: 250px;
+        height: 125px;
+    }
+}
+
+/* landscape */
+@media (orientation: landscape) {
+    .logo_row {
+        top: 23%;
+        left: 30%;
+        width: 250px;
+        height: 125px;
+    }
+}
+
+/* lg */
+@media only screen and (min-width: 768px) {
+    .logo_row {
+        top: 20%;
+        left: 32%;
+        width: 300px;
+        height: 150px;
+    }
+}
+
+/* xl */
+@media only screen and (min-width: 992px) {
+    .logo_row {
+        top: 20%;
+        left: 35%;
+        width: 350px;
+        height: 175px;
+    }
+}
