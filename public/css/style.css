@@ -272,7 +272,7 @@ p > a:active {
 /* md */
 @media only screen and (min-width: 576px) {
     .feature1 {
-        margin: 20px 35%;
+        margin: 20px;
     }
     
     .p1 {
@@ -281,7 +281,7 @@ p > a:active {
     }
     
     .feature2 {
-        margin: 20px 35%;
+        margin: 20px;
     }
     
     .p2 {
@@ -321,7 +321,7 @@ p > a:active {
     }
 
     .feature1 {
-        margin: 20px 20px;
+        margin: 40px;
     }
     
     .p1 {
@@ -330,7 +330,7 @@ p > a:active {
     }
     
     .feature2 {
-        margin: 20px 20px;
+        margin: 40px;
     }
     
     .p2 {
@@ -351,6 +351,19 @@ p > a:active {
 
 /* xl */
 @media only screen and (min-width: 992px) {
+    .feature1 {
+        margin: 40px;
+    }
+    
+    .p1 {
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .feature2 {
+        margin: 40px;
+    }
+
     .logo_row {
         top: 20%;
         left: 35%;
