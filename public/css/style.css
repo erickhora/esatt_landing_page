@@ -90,7 +90,7 @@ nav {
 
 .feature1 {
     flex-direction: column;
-    margin: 20px 30%;
+    margin: 20px;
     border-radius: 50%;
     width: 155px;
     height: 150px;
@@ -105,7 +105,7 @@ nav {
 
 .feature2 {
     flex-direction: column;
-    margin: 20px 30%;
+    margin: 20px;
     border-radius: 50%;
     width: 155px;
     height: 150px;
